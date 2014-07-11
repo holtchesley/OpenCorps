@@ -1,0 +1,14 @@
+{
+  "bot_id": "ContractAwardsSearchWashingtonDC",
+  "title": "Contract Awards in Washington DC",
+  "description": "Pull contract awards for the city of Washington DC",
+  "language": "python",
+  "data_type": "primary data",
+  "identifying_fields": [
+    "number"
+  ],
+  "files": [
+    "scraper.py"
+  ],
+  "frequency": "monthly"
+}
