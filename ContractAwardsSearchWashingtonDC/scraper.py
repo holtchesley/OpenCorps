@@ -33,7 +33,6 @@ while t > 0:
     response = requests.get(current_url)
     if not response.ok:
         n += 1
-        turbotlib.log("No record for: " + str(n))
         continue
     doc = BeautifulSoup(response.content)
     tds = doc.find('div',class_="contentContainer").find_all('td')
@@ -96,4 +95,4 @@ while t > 0:
     t -= 1
 
 
-turbotlib.log(str(n) + " items scraped.")
+turbotlib.log(str(n-1) + " items scraped.")
